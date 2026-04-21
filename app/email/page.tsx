@@ -6,7 +6,7 @@ export default function page() {
     // Background container
     <div className="h-screen w-full bg-zinc-700 flex justify-center items-center">
       {/* card */}
-      <div className="md:w-[440px] w-[300px] md:h-1/4 h-[70%] bg-zinc-800 rounded-2xl flex flex-col md:flex-row overflow-hidden">
+      <div className="md:w-[440px] w-[300px] md:h-1/4 h-[80vh] bg-zinc-800 rounded-2xl flex flex-col md:flex-row overflow-hidden">
         {/* image */}
         <img
           src="/image.jpg"
