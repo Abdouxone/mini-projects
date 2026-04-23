@@ -57,7 +57,7 @@ export default function page() {
           </div>
         </div>
         {/* Images */}
-        <div className="grid  mb-10 md:grid-cols-3 w-[80%] mx-auto  mt-10 md:space-x-5  md:space-y-3 space-y-4">
+        <div className="grid  mb-10 md:grid-cols-3 w-[80%] mx-auto  mt-10  md:gap-3 space-y-4 md:space-y-0">
           {images.map((image) => (
             <div className="group relative">
               <img
@@ -66,7 +66,7 @@ export default function page() {
                 src={image.url}
                 alt="pic"
               />
-              <div className="absolute text-white bg-black rounded-b-lg p-2 w-full bottom-0  opacity-0 group-hover:opacity-60 transition-all duration-500">
+              <div className="absolute text-white bg-black rounded-b-lg p-2 w-full bottom-0   opacity-0 group-hover:opacity-60 transition-all duration-500">
                 <div className="flex flex-row justify-between">
                   <div className="flex flex-col">
                     <span className="font-serif">Abstract Painting</span>
