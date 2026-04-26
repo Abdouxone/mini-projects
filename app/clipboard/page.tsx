@@ -9,7 +9,7 @@ export default function page() {
         className="absolute top-0 left-0 right-0 w-full"
       />
       {/* section 1 */}
-      <div className="flex flex-col items-center mt-20 space-y-5 w-[80%] ">
+      <div className="flex flex-col items-center mt-25 mb-10 space-y-5 max-w-6x px-10  ">
         <div>
           <img src="/clipboard/images/logo.svg" alt="" className="w-32" />
         </div>
@@ -35,7 +35,7 @@ export default function page() {
 
       {/* section 2 */}
 
-      <div className="flex flex-col items-center mt-20 space-y-5 w-[80%] ">
+      <div className="flex flex-col items-center mt-20 space-y-5 max-w-6xl  px-10  ">
         <div className="font-bai text-center space-y-10">
           <h1 className="text-4xl md:text-5xl font-bold text-zinc-600 ">
             Keep track of your snippets
