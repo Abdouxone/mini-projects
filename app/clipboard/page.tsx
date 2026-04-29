@@ -35,7 +35,7 @@ export default function page() {
 
       {/* section 2 */}
 
-      <div className="flex flex-col items-center mt-20 space-y-5 max-w-6xl  px-10  ">
+      <div className="flex flex-col items-center mt-20 space-y-5 max-w-6xl px-10 ">
         <div className="font-bai text-center space-y-10">
           <h1 className="text-4xl md:text-5xl font-bold text-zinc-600 ">
             Keep track of your snippets
@@ -47,22 +47,29 @@ export default function page() {
           </p>
         </div>
       </div>
-      {/* <div>
-        <div className="flex flex-col md:flex-row mt-15">
-          <div>
-            <img src="/clipboard/images/image-computer.png" alt="" />
+
+      {/* section 3 */}
+      <div>
+        <div className="flex flex-col relative md:flex-row mt-15 max-w-6xl space-x-32">
+          <div className="md:w-1/2">
+            <img
+              src="/clipboard/images/image-computer.png"
+              alt=""
+              className="md:absolute top-0 right-[50%]"
+            />
           </div>
+
           <div className="mt-10 space-y-5">
             <h1 className="text-center font-semibold text-zinc-600 text-3xl md:text-4xl">
               Quick Search
             </h1>
             <p className="text-zinc-400 text-xl">
               Easily search your snippets by content, category, web address,
-              application, and more.
+              application, and more..
             </p>
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }
