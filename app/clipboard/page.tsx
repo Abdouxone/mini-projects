@@ -96,10 +96,66 @@ export default function page() {
           </p>
         </div>
 
-        <img src="/clipboard/images/image-devices.png" alt="" className="" />
+        <img
+          src="/clipboard/images/image-devices.png"
+          alt=""
+          className="px-5"
+        />
       </div>
 
       {/* Section 5 */}
+
+      <div className="flex flex-col items-center space-y-15 justify-center mt-10 p-10">
+        <div className="font-bai text-center">
+          <h3>Supercharge your workflow</h3>
+          <p>We've got the tools to boost your productivity</p>
+        </div>
+
+        <div className="flex flex-col w-full max-w-6xl md:space-x-10 md:flex-row space-y-13 md:space-y-0  font-bai text-center items-center justify-center ">
+          <div className="flex flex-col items-center justify-center space-y-5">
+            <img
+              src="/clipboard/images/icon-blacklist.svg"
+              className="w-10"
+              alt=""
+            />
+            <h1 className="text-2xl font-semibold text-zinc-600">
+              Create Blacklists
+            </h1>
+            <p className="text-base max-w-sm">
+              Easily search your snippets by content, category, web address,
+              application, and more.
+            </p>
+          </div>
+          {/* item 2 */}
+          <div className="flex flex-col items-center justify-center space-y-5">
+            <img
+              src="/clipboard/images/icon-text.svg"
+              className="w-10"
+              alt=""
+            />
+            <h1 className="text-2xl font-semibold text-zinc-600">
+              Plain Text Snippets
+            </h1>
+            <p className="text-base  max-w-sm">
+              Remove unwanted formatting from copied text for a consistent look.
+            </p>
+          </div>
+          {/* item 3 */}
+          <div className="flex flex-col items-center justify-center space-y-5">
+            <img
+              src="/clipboard/images/icon-preview.svg"
+              className="w-10"
+              alt=""
+            />
+            <h1 className="text-2xl font-semibold text-zinc-600">
+              Sneak Preview
+            </h1>
+            <p className="text-base max-w-sm">
+              Quick preview of all snippets on your Clipboard for easy access.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
