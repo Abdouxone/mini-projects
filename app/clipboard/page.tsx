@@ -156,6 +156,28 @@ export default function page() {
           </div>
         </div>
       </div>
+
+      {/* section 6 */}
+
+      <div className="max-w-6xl p-10 mt-20">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-20">
+          <div>
+            <img src="/clipboard/images/logo-google.png" alt="" />
+          </div>
+          <div>
+            <img src="/clipboard/images/logo-ibm.png" alt="" />
+          </div>
+          <div>
+            <img src="/clipboard/images/logo-microsoft.png" alt="" />
+          </div>
+          <div>
+            <img src="/clipboard/images/logo-hp.png" alt="" />
+          </div>
+          <div>
+            <img src="/clipboard/images/logo-vector-graphics.png" alt="" />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
