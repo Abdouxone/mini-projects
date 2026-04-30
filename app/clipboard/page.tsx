@@ -49,7 +49,7 @@ export default function page() {
       </div>
 
       {/* section 3 */}
-      <div className="font-bai mb-40">
+      <div className="font-bai ">
         <div className="flex flex-col px-10 relative md:flex-row mt-15 max-w-6xl space-x-32">
           <div className="w-full ">
             <img
@@ -87,7 +87,19 @@ export default function page() {
 
       {/* Section 4 */}
 
-      <div></div>
+      <div className="flex font-bai flex-col md:mt-100 mt-30 max-w-6xl space-y-10 items-center">
+        <div className="text-center p-10">
+          <h3>Access Clipboard Anywhere</h3>
+          <p className="max-w-3xl">
+            Whether you're on the go, or at your computer, you can access all
+            your Clipboard snippets in a few simple clicks
+          </p>
+        </div>
+
+        <img src="/clipboard/images/image-devices.png" alt="" className="" />
+      </div>
+
+      {/* Section 5 */}
     </div>
   );
 }
