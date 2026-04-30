@@ -178,6 +178,67 @@ export default function page() {
           </div>
         </div>
       </div>
+
+      {/* section 7 */}
+      <div className="max-w-6xl flex flex-col text-center mt-20 p-10 space-y-10">
+        <h3>Clipboard for IOS and MacOs</h3>
+        <p className="max-w-3xl">
+          Available for free on the App Store. Download for Mac or iOS, sync
+          with iCloud and you're ready to start adding to your clipboard.
+        </p>
+        <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:px-30 ">
+          <div className=" bg-strong-cyan py-4  px-5  text-xl rounded-full hover:cursor-pointer text-white w-full">
+            Download for IOS
+          </div>
+          <div className=" bg-lightBlue text-white py-4 text-xl hover:cursor-pointer px-5 rounded-full w-full">
+            Download for MAC
+          </div>
+        </div>
+      </div>
+      {/* Footer */}
+      <div className="py-5 mt-10 flex items-center justify-center  bg-gray-100 w-full">
+        <div className="max-w-6xl ">
+          <div className="flex flex-col md:flex-row  md:space-x-20 font-bai gap-2 text-grayishBlue text-base items-center justify-center md:text-left text-center  ">
+            {/*logo */}
+            <img
+              src="/clipboard/images/logo.svg"
+              alt=""
+              className="w-15 mb-5 md:mb-0"
+            />
+            <div className="flex-col flex gap-2 ">
+              <a href="" className="hover:text-strong-cyan">
+                FAQs
+              </a>
+              <a href="" className="hover:text-strong-cyan">
+                Contact Us
+              </a>
+            </div>
+            <div className="flex-col flex gap-2">
+              <a href="" className="hover:text-strong-cyan">
+                Privacy Policy
+              </a>
+              <a href="" className="hover:text-strong-cyan">
+                Press Kit
+              </a>
+            </div>
+            <div className="flex-col flex gap-2 ">
+              <a href="" className="hover:text-strong-cyan">
+                Install Guide
+              </a>
+            </div>
+
+            <div className="md:ml-30 flex mt-3 gap-8">
+              <img
+                src="/clipboard/images/icon-facebook.svg"
+                className="hover:fill-strong-cyan"
+                alt=""
+              />
+              <img src="/clipboard/images/icon-twitter.svg" alt="" />
+              <img src="/clipboard/images/icon-instagram.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
