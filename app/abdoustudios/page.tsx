@@ -1,3 +1,7 @@
+"use client";
+import { MenuIcon, XIcon } from "lucide-react";
+import { useState } from "react";
+
 const dataImages = [
   {
     imgDesktop: "/abdoustudios/images/desktop/image-deep-earth.jpg",
@@ -42,10 +46,11 @@ const dataImages = [
 ];
 
 export default function page() {
+  const [open, setOpen] = useState(false);
   return (
     <div>
       {/* 1: Hero section  */}
-      <div className="w-full md:bg-[url('/abdoustudios/images/desktop/image-hero.jpg')] bg-cover bg-[url('/abdoustudios/images/mobile/image-hero.jpg')] md:h-[650px] h-[550px]">
+      <div className="w-full relative md:bg-[url('/abdoustudios/images/desktop/image-hero.jpg')] bg-cover bg-[url('/abdoustudios/images/mobile/image-hero.jpg')] md:h-[650px] h-[550px]">
         <div className="max-w-6xl p-10 flex items-center justify-center mx-auto text-white">
           <div className="flex w-full justify-between items-center">
             <h1 className="text-4xl font-bold font-nunito">abdoustudios</h1>
@@ -66,6 +71,38 @@ export default function page() {
                 Support
               </a>
             </nav>
+            {!open ? (
+              <MenuIcon
+                className="z-10 md:hidden cursor-pointer"
+                onClick={() => setOpen(!open)}
+              />
+            ) : (
+              <XIcon
+                className="z-10 md:hidden cursor-pointer"
+                onClick={() => setOpen(!open)}
+              />
+            )}
+            {open && (
+              <div className="absolute inset-0 transition-all  duration-300  h-screen bg-black">
+                <nav className="flex uppercase flex-col tracking-wider mt-30 p-15 space-y-4 ">
+                  <a className="hover:text-pink-300" href="#">
+                    About
+                  </a>
+                  <a className="hover:text-pink-300" href="#">
+                    Careers
+                  </a>
+                  <a className="hover:text-pink-300" href="#">
+                    Events
+                  </a>
+                  <a className="hover:text-pink-300" href="#">
+                    Products
+                  </a>
+                  <a className="hover:text-pink-300" href="#">
+                    Support
+                  </a>
+                </nav>
+              </div>
+            )}
           </div>
         </div>
         <div className="max-w-6xl md:text-6xl text-4xl  mt-24 px-10 mx-auto">
