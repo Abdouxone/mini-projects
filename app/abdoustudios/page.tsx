@@ -110,7 +110,7 @@ export default function page() {
             See All
           </button>
         </div>
-        <div className="grid p-4 w-full md:p-0 space-y-5  md:grid-cols-4 md:gap-8  grid-cols-1">
+        <div className="grid p-4 w-full md:p-0 space-y-5 md:space-y-0 md:grid-cols-4 md:gap-8  grid-cols-1">
           {dataImages.map((item, index) => (
             <div key={index} className="group  relative">
               <div className="overflow-hidden">
@@ -122,13 +122,71 @@ export default function page() {
                 <img className="block md:hidden" src={item.imgMobile} alt="" />
               </div>
 
-              <div className="absolute bottom-0 z-10 w-[80%] p-10  text-2xl text-white">
+              <div className="absolute bottom-0 z-10 w-[80%] md:p-10 p-5  text-2xl text-white">
                 <h1>{item.text}</h1>
               </div>
               <div className=" absolute inset-0 bg-white/90 opacity-0 group-hover:opacity-50 transition-all duration-300   "></div>
               <div className="absolute inset-0  bg-linear-to-b from-black/0 to-slate-900 opacity-100"></div>
             </div>
           ))}
+        </div>
+      </div>
+
+      {/* FOOTER SECTION */}
+      <div className="bg-black w-full font-nunito  text-white">
+        <div className="max-w-6xl mx-auto flex flex-col  md:flex-row justify-between">
+          <div className="flex mt-10 flex-col items-center md:items-start ">
+            <h1 className="text-3xl font-bold">abdoustudios</h1>
+            <nav className="flex flex-col md:flex-row md:mt-4 mt-7 items-center space-y-5 md:space-y-0 md:space-x-5 ">
+              <div className="group">
+                <a href="">About</a>
+                <div className="border mx-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
+              </div>
+              <div className="group">
+                <a href="">Careers</a>
+                <div className="border mx-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
+              </div>
+              <div className="group">
+                <a href="">Events</a>
+                <div className="border mx-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
+              </div>
+              <div className="group">
+                <a href="">Products</a>
+                <div className="border mx-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
+              </div>
+              <div className="group">
+                <a href="">Support</a>
+                <div className="border mx-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
+              </div>
+            </nav>
+          </div>
+          <div className="flex flex-col mt-10">
+            <div className="flex flex-row space-x-5 md:justify-start justify-center ">
+              <img
+                src="/abdoustudios/images/icon-facebook.svg"
+                className="w-5"
+                alt=""
+              />
+              <img
+                src="/abdoustudios/images/icon-instagram.svg"
+                className="w-5"
+                alt=""
+              />
+              <img
+                src="/abdoustudios/images/icon-pinterest.svg"
+                className="w-5"
+                alt=""
+              />
+              <img
+                src="/abdoustudios/images/icon-twitter.svg"
+                className="w-5"
+                alt=""
+              />
+            </div>
+            <p className="mt-3 text-base font-thin text-center mb-15">
+              © 2026 abdoustudios. All rights reserved
+            </p>
+          </div>
         </div>
       </div>
     </div>
