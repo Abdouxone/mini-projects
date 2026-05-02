@@ -1,3 +1,46 @@
+const dataImages = [
+  {
+    imgDesktop: "/abdoustudios/images/desktop/image-deep-earth.jpg",
+    imgMobile: "/abdoustudios/images/mobile/image-deep-earth.jpg",
+    text: "DEEP EARTH",
+  },
+  {
+    imgDesktop: "/abdoustudios/images/desktop/image-night-arcade.jpg",
+    imgMobile: "/abdoustudios/images/mobile/image-night-arcade.jpg",
+    text: "NIGHT ARCADE",
+  },
+  {
+    imgDesktop: "/abdoustudios/images/desktop/image-soccer-team.jpg",
+    imgMobile: "/abdoustudios/images/mobile/image-soccer-team.jpg",
+    text: "SOCCER TEAM VR",
+  },
+  {
+    imgDesktop: "/abdoustudios/images/desktop/image-grid.jpg",
+    imgMobile: "/abdoustudios/images/mobile/image-grid.jpg",
+    text: "THE GRID",
+  },
+  {
+    imgDesktop: "/abdoustudios/images/desktop/image-from-above.jpg",
+    imgMobile: "/abdoustudios/images/mobile/image-from-above.jpg",
+    text: "FROM UP ABOVE VR",
+  },
+  {
+    imgDesktop: "/abdoustudios/images/desktop/image-pocket-borealis.jpg",
+    imgMobile: "/abdoustudios/images/mobile/image-pocket-borealis.jpg",
+    text: "POCKET BOREALIS",
+  },
+  {
+    imgDesktop: "/abdoustudios/images/desktop/image-curiosity.jpg",
+    imgMobile: "/abdoustudios/images/mobile/image-curiosity.jpg",
+    text: "THE CURIOSITY",
+  },
+  {
+    imgDesktop: "/abdoustudios/images/desktop/image-fisheye.jpg",
+    imgMobile: "/abdoustudios/images/mobile/image-fisheye.jpg",
+    text: "MAKE IT FISHEYE",
+  },
+];
+
 export default function page() {
   return (
     <div>
@@ -32,7 +75,7 @@ export default function page() {
         </div>
       </div>
       {/* section 2 */}
-      <div className="md:max-w-6xl md:px-0 px-6  font-nunito mx-auto mt-30 mb-50">
+      <div className="md:max-w-6xl md:px-0 px-6  font-nunito mx-auto mt-30 mb-27">
         <div className="flex relative flex-col md:flex-row space-y-10 md:space-y-0">
           <img
             className="w-190 hidden md:block"
@@ -58,6 +101,36 @@ export default function page() {
         </div>
       </div>
       {/* OUR CREATIONS SECTION */}
+      <div className="max-w-6xl font-nunito mx-auto mb-25">
+        <div className="flex flex-col text-center md:flex-row justify-between mb-20">
+          <h1 className="text-4xl md:text-5xl tracking-wider font-thin uppercase ">
+            Our creations
+          </h1>
+          <button className=" hidden md:block border-2 text-xl uppercase bg-white hover:bg-black hover:text-white transition-all duration-200  tracking-widest px-5">
+            See All
+          </button>
+        </div>
+        <div className="grid p-4 w-full md:p-0 space-y-5  md:grid-cols-4 md:gap-8  grid-cols-1">
+          {dataImages.map((item, index) => (
+            <div key={index} className="group  relative">
+              <div className="overflow-hidden">
+                <img
+                  className="hidden md:block w-full group-hover:scale-110 transition-all duration-300 "
+                  src={item.imgDesktop}
+                  alt=""
+                />
+                <img className="block md:hidden" src={item.imgMobile} alt="" />
+              </div>
+
+              <div className="absolute bottom-0 z-10 w-[80%] p-10  text-2xl text-white">
+                <h1>{item.text}</h1>
+              </div>
+              <div className=" absolute inset-0 bg-white/90 opacity-0 group-hover:opacity-50 transition-all duration-300   "></div>
+              <div className="absolute inset-0  bg-linear-to-b from-black/0 to-slate-900 opacity-100"></div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
