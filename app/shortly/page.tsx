@@ -106,8 +106,8 @@ export default function page() {
         {/* Statistics Section */}
         <div className="mt-20 pb-25">
           <div className="flex flex-col text-center mb-20">
-            <h1 className="text-4xl font-bold">Advanced Statistics</h1>
-            <p className="mt-5 text-base font-normal max-w-md mb- mx-auto">
+            <h1 className="text-4xl font-bold ">Advanced Statistics</h1>
+            <p className="mt-5 text-base font-normal md:max-w-md max-w-xs mx-auto">
               Track how your links are performing across the web with our
               advanced statistics dashboard.
             </p>
