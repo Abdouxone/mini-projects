@@ -21,10 +21,12 @@ export default function page() {
             </nav>
           </div>
           <div className="hidden md:flex items-center justify-center ">
-            <div className="p-4 font-bold text-zinc-500 text-lg">Login</div>
-            <div className="px-7 py-2 font-bold  text-white text-lg rounded-3xl bg-[#2BD0D0] ">
-              Sign Up
+            <div className="p-4 font-bold cursor-pointer text-zinc-500 text-lg">
+              Login
             </div>
+            <button className="px-7 cursor-pointer py-2 font-bold  text-white text-lg rounded-3xl bg-[#2BD0D0] ">
+              Sign Up
+            </button>
           </div>
           <div className="md:hidden cursor-pointer flex">
             <MenuIcon color="gray" size={30} />
@@ -66,7 +68,7 @@ export default function page() {
               placeholder="Shorten a link here..."
             />
 
-            <button className="px-12 py-3 w-full md:w-fit  text-white   bg-[#2BD0D0] rounded-lg whitespace-nowrap">
+            <button className="px-12 py-3 w-full md:w-fit cursor-pointer  text-white   bg-[#2BD0D0] rounded-lg whitespace-nowrap">
               Shorten it!
             </button>
           </div>
@@ -74,7 +76,7 @@ export default function page() {
             <p className="text-black text-lg">https://frontendmentor.io</p>
             <div className="flex flex-col md:flex-row justify-center items-center md:space-y-0 space-y-3 md:space-x-4">
               <p className="text-[#2BD0D0] text-lg">https://rel.ink/k4IKyk</p>
-              <button className="bg-[#2BD0D0] text-white px-8 py-2 rounded-lg">
+              <button className="bg-[#2BD0D0] cursor-pointer text-white px-8 py-2 rounded-lg">
                 Copy
               </button>
             </div>
@@ -85,7 +87,7 @@ export default function page() {
             </p>
             <div className="flex flex-col md:flex-row justify-center items-center md:space-y-0 space-y-3 md:space-x-4">
               <p className="text-[#2BD0D0] text-lg">https://rel.ink/gxOXp9</p>
-              <button className="bg-[#2BD0D0] text-white px-8 py-2 rounded-lg">
+              <button className="bg-[#2BD0D0] cursor-pointer text-white px-8 py-2 rounded-lg">
                 Copy
               </button>
             </div>
@@ -96,7 +98,7 @@ export default function page() {
             </p>
             <div className="flex flex-col md:flex-row justify-center items-center md:space-y-0 space-y-3 md:space-x-4">
               <p className="text-[#2BD0D0] text-lg">https://rel.ink/gob3X9</p>
-              <button className="bg-[#2BD0D0] text-white px-8 py-2 rounded-lg">
+              <button className="bg-[#2BD0D0] cursor-pointer text-white px-8 py-2 rounded-lg">
                 Copy
               </button>
             </div>
