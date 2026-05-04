@@ -146,9 +146,9 @@ export default function page() {
               <div className="mt-9 text-center md:text-left">
                 <h1 className="text-xl font-bold">Brand Recognition</h1>
                 <p className="font-normal mt-4 text-base ">
-                  Boost your brand recognition with each click. Generic links
-                  don't mean a thing. Branded links help instil confidence in
-                  your content.
+                  Gain insights into who is clicking your links. Knowing when
+                  and where people engage with your content helps inform better
+                  decisions.
                 </p>
               </div>
             </div>
@@ -164,9 +164,8 @@ export default function page() {
               <div className="mt-9 text-center md:text-left">
                 <h1 className="text-xl font-bold">Brand Recognition</h1>
                 <p className="font-normal mt-4 text-base ">
-                  Boost your brand recognition with each click. Generic links
-                  don't mean a thing. Branded links help instil confidence in
-                  your content.
+                  Improve brand awareness and content discoverability through
+                  customizable links, supercharging audience engagement.
                 </p>
               </div>
             </div>
