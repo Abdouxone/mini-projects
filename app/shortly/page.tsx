@@ -1,6 +1,9 @@
+"use client";
 import { MenuIcon } from "lucide-react";
+import { useState } from "react";
 
 export default function page() {
+  const [open, setOpen] = useState(false);
   return (
     <div>
       {/* header */}
@@ -29,10 +32,22 @@ export default function page() {
             </button>
           </div>
           <div className="md:hidden cursor-pointer flex">
-            <MenuIcon color="gray" size={30} />
+            <MenuIcon onClick={() => setOpen(!open)} color="gray" size={30} />
           </div>
         </div>
       </div>
+      {open && (
+        <div className="flex flex-col absolute space-y-3 rounded-2xl right-1/2 translate-x-1/2 text-center px-30 py-5 transition-all duration-300  text-white  font-poppins bg-[#3B3054]">
+          <h1 className="text-lg font-bold cursor-pointer">Features</h1>
+          <h1 className="text-lg font-bold cursor-pointer">Pricing</h1>
+          <h1 className="text-lg font-bold cursor-pointer">Resources</h1>
+          <div className="border border-gray-400 my-5" />
+          <h1 className="text-lg font-bold cursor-pointer">Login</h1>
+          <h1 className="text-lg font-bold whitespace-nowrap bg-cyan-500 cursor-pointer w-fit rounded-full px-4 py-2 mx-auto">
+            Sign Up
+          </h1>
+        </div>
+      )}
       {/* hero */}
       <div className="max-w-7xl mb-45 font-poppins  mx-auto">
         <div className="flex  flex-col-reverse p-5 pt-2 items-center  justify-between   lg:flex-row">
