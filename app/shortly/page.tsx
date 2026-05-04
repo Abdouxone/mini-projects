@@ -102,6 +102,76 @@ export default function page() {
             </div>
           </div>
         </div>
+
+        {/* Statistics Section */}
+        <div className="mt-20 pb-25">
+          <div className="flex flex-col text-center mb-20">
+            <h1 className="text-4xl font-bold">Advanced Statistics</h1>
+            <p className="mt-5 text-base font-normal max-w-md mb- mx-auto">
+              Track how your links are performing across the web with our
+              advanced statistics dashboard.
+            </p>
+          </div>
+
+          {/* cards */}
+          <div className="flex  items-center relative space-y-15 md:space-y-0 p-6 md:p-0 justify-center flex-col md:flex-row lg:max-w-6xl mx-auto  md:space-x-10 ">
+            <div className=" md:block md:w-1/2 w-2 h-1/2 absolute md:h-3 bg-[#2BD0D0]"></div>
+            <div className="flex flex-col relative items-center md:items-start  bg-white rounded-lg p-5">
+              <div className="absolute bg-black p-5 -top-10 rounded-full">
+                <img
+                  className=" "
+                  src="/shortly/images/icon-brand-recognition.svg"
+                  alt=""
+                />
+              </div>
+
+              <div className="mt-9 text-center md:text-left">
+                <h1 className="text-xl font-bold">Brand Recognition</h1>
+                <p className="font-normal mt-4 text-base ">
+                  Boost your brand recognition with each click. Generic links
+                  don't mean a thing. Branded links help instil confidence in
+                  your content.
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col relative items-center md:items-start  md:mt-15 bg-white rounded-lg p-5">
+              <div className="absolute bg-black p-5 -top-10 rounded-full">
+                <img
+                  className=" "
+                  src="/shortly/images/icon-detailed-records.svg"
+                  alt=""
+                />
+              </div>
+
+              <div className="mt-9 text-center md:text-left">
+                <h1 className="text-xl font-bold">Brand Recognition</h1>
+                <p className="font-normal mt-4 text-base ">
+                  Boost your brand recognition with each click. Generic links
+                  don't mean a thing. Branded links help instil confidence in
+                  your content.
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col relative items-center md:items-start  md:mt-25 bg-white rounded-lg p-5">
+              <div className="absolute bg-black p-5 -top-10 rounded-full">
+                <img
+                  className=" "
+                  src="/shortly/images/icon-fully-customizable.svg"
+                  alt=""
+                />
+              </div>
+
+              <div className="mt-9 text-center md:text-left">
+                <h1 className="text-xl font-bold">Brand Recognition</h1>
+                <p className="font-normal mt-4 text-base ">
+                  Boost your brand recognition with each click. Generic links
+                  don't mean a thing. Branded links help instil confidence in
+                  your content.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   );
