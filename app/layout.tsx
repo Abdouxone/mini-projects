@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Bai_Jamjuree, Nunito } from "next/font/google";
+import {
+  Geist,
+  Geist_Mono,
+  Bai_Jamjuree,
+  Poppins,
+  Nunito,
+} from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -10,6 +16,12 @@ const geistSans = Geist({
 const baiJamjuree = Bai_Jamjuree({
   variable: "--font-bai-jamjuree",
   weight: "400",
+  subsets: ["latin"],
+});
+
+const poppins = Poppins({
+  variable: "--font-poppins",
+  weight: ["100", "400", "700"],
   subsets: ["latin"],
 });
 
@@ -37,7 +49,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${baiJamjuree.variable}  ${nunito.variable}  h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${baiJamjuree.variable}  ${nunito.variable}  h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
