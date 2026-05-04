@@ -61,7 +61,7 @@ export default function page() {
       {/* links section */}
       <section className=" bg-gray-200 font-poppins ">
         <div className="max-w-4xl p-5  mx-auto space-y-5">
-          <div className="bg-gray-800 -mt-19 justify-center md:space-x-10 md:space-y-0 space-y-5 items-center flex flex-col p-9 rounded-lg md:flex-row">
+          <div className="bg-[#3B3054] -mt-19 justify-center md:space-x-10 md:space-y-0 space-y-5 items-center flex flex-col p-9 rounded-lg md:flex-row">
             <input
               type="text"
               className=" border-none outline-none w-full p-3 text-black rounded-lg placeholder:text-orange-400 bg-white "
@@ -87,7 +87,7 @@ export default function page() {
             </p>
             <div className="flex flex-col md:flex-row justify-center items-center md:space-y-0 space-y-3 md:space-x-4">
               <p className="text-[#2BD0D0] text-lg">https://rel.ink/gxOXp9</p>
-              <button className="bg-[#2BD0D0] cursor-pointer text-white px-8 py-2 rounded-lg">
+              <button className="bg-[#3B3054] cursor-pointer text-white px-8 py-2 rounded-lg">
                 Copy
               </button>
             </div>
