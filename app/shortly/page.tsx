@@ -154,7 +154,7 @@ export default function page() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col relative items-center md:items-start  md:mt-25 bg-white rounded-lg p-5">
+            <div className="flex flex-col relative items-center md:items-start  md:mt-35 bg-white rounded-lg p-5">
               <div className="absolute bg-black p-5 -top-10 rounded-full">
                 <img
                   className=" "
