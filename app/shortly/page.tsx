@@ -178,7 +178,7 @@ export default function page() {
       {/*  boost section */}
       <section className="w-full bg-[#3B3054] bg-[url('/shortly/images/bg-boost-mobile.svg')] md:bg-[url('/shortly/images/bg-boost-desktop.svg')] bg-cover bg-no-bg-repeat relative ">
         <div className="flex flex-col font-poppins pt-20 pb-20 justify-between space-y-5 items-center">
-          <h1 className="text-white text-4xl font-bold ">
+          <h1 className="text-white text-3xl text-center font-bold ">
             Boost your links today
           </h1>
           <button className="bg-[#2BD0D0] p-4 text-2xl md:px-5 font-bold text-white md:py-2 rounded-full">
