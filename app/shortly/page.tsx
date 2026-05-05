@@ -37,7 +37,7 @@ export default function page() {
         </div>
       </div>
       {open && (
-        <div className="flex flex-col absolute space-y-3 rounded-2xl right-1/2 translate-x-1/2 text-center px-30 py-5 transition-all duration-300  text-white  font-poppins bg-[#3B3054]">
+        <div className="flex flex-col absolute space-y-3  rounded-2xl  translate-x-1/2 right-1/2 text-center px-30 py-5 transition-all duration-300  text-white  font-poppins bg-[#3B3054]">
           <h1 className="text-lg font-bold cursor-pointer">Features</h1>
           <h1 className="text-lg font-bold cursor-pointer">Pricing</h1>
           <h1 className="text-lg font-bold cursor-pointer">Resources</h1>
@@ -203,8 +203,37 @@ export default function page() {
       </section>
 
       {/* footer */}
-      <footer className="bg-[#232127] w-full">
-        <div></div>
+      <footer className="bg-[#232127] font-nunito space-y-10 md:space-y-0 px-20 py-10 md:justify-between flex flex-col items-center md:items-start md:flex-row w-full">
+        <div className="">
+          <img src="/shortly/images/logo.svg" alt="" />
+        </div>
+        <div className="flex flex-col space-y-10 md:space-y-0 md:space-x-10 md:flex-row">
+          <div className="flex flex-col space-y-3 text-center md:text-left">
+            <h1 className="text-white text-xl font-semibold ">Features</h1>
+            <a className="text-gray-400 text-base  ">Link Shortening</a>
+            <a className="text-gray-400 text-base ">Branded Links</a>
+            <a className="text-gray-400 text-base">Analytics</a>
+          </div>
+          <div className="flex flex-col space-y-3 text-center md:text-left">
+            <h1 className="text-white text-xl font-semibold ">Resources</h1>
+            <a className="text-gray-400 text-base  ">Blog</a>
+            <a className="text-gray-400 text-base ">Developers</a>
+            <a className="text-gray-400 text-base">Support</a>
+          </div>
+          <div className="flex flex-col space-y-3 text-center md:text-left">
+            <h1 className="text-white text-xl font-semibold ">Company</h1>
+            <a className="text-gray-400 text-base  ">About</a>
+            <a className="text-gray-400 text-base ">Our Team</a>
+            <a className="text-gray-400 text-base">Careers</a>
+            <a className="text-gray-400 text-base">Contact</a>
+          </div>
+        </div>
+        <div className="flex space-x-5">
+          <img src="/shortly/images/icon-facebook.svg" alt="" />
+          <img src="/shortly/images/icon-instagram.svg" alt="" />
+          <img src="/shortly/images/icon-pinterest.svg" alt="" />
+          <img src="/shortly/images/icon-twitter.svg" alt="" />
+        </div>
       </footer>
     </div>
   );
