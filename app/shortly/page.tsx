@@ -196,7 +196,7 @@ export default function page() {
           <h1 className="text-white text-3xl text-center font-bold ">
             Boost your links today
           </h1>
-          <button className="bg-[#2BD0D0] p-4 text-2xl md:px-5 font-bold text-white md:py-2 rounded-full">
+          <button className="bg-[#2BD0D0] cursor-pointer hover:scale-105 transition-transform duration-300 p-4 text-2xl md:px-5 font-bold text-white md:py-2 rounded-full">
             Get Started
           </button>
         </div>
@@ -210,29 +210,65 @@ export default function page() {
         <div className="flex flex-col space-y-10 md:space-y-0 md:space-x-10 md:flex-row">
           <div className="flex flex-col space-y-3 text-center md:text-left">
             <h1 className="text-white text-xl font-semibold ">Features</h1>
-            <a className="text-gray-400 text-base  ">Link Shortening</a>
-            <a className="text-gray-400 text-base ">Branded Links</a>
-            <a className="text-gray-400 text-base">Analytics</a>
+            <a className="text-gray-400 cursor-pointer text-base hover:text-[#2BD0D0] ">
+              Link Shortening
+            </a>
+            <a className="text-gray-400 cursor-pointer text-base hover:text-[#2BD0D0] ">
+              Branded Links
+            </a>
+            <a className="text-gray-400 cursor-pointer text-base hover:text-[#2BD0D0]">
+              Analytics
+            </a>
           </div>
           <div className="flex flex-col space-y-3 text-center md:text-left">
             <h1 className="text-white text-xl font-semibold ">Resources</h1>
-            <a className="text-gray-400 text-base  ">Blog</a>
-            <a className="text-gray-400 text-base ">Developers</a>
-            <a className="text-gray-400 text-base">Support</a>
+            <a className="text-gray-400 cursor-pointer text-base hover:text-[#2BD0D0]  ">
+              Blog
+            </a>
+            <a className="text-gray-400 cursor-pointer text-base hover:text-[#2BD0D0] ">
+              Developers
+            </a>
+            <a className="text-gray-400 cursor-pointer text-base hover:text-[#2BD0D0]">
+              Support
+            </a>
           </div>
           <div className="flex flex-col space-y-3 text-center md:text-left">
             <h1 className="text-white text-xl font-semibold ">Company</h1>
-            <a className="text-gray-400 text-base  ">About</a>
-            <a className="text-gray-400 text-base ">Our Team</a>
-            <a className="text-gray-400 text-base">Careers</a>
-            <a className="text-gray-400 text-base">Contact</a>
+            <a className="text-gray-400 cursor-pointer text-base hover:text-[#2BD0D0]  ">
+              About
+            </a>
+            <a className="text-gray-400 cursor-pointer text-base hover:text-[#2BD0D0] ">
+              Our Team
+            </a>
+            <a className="text-gray-400 cursor-pointer text-base hover:text-[#2BD0D0]">
+              Careers
+            </a>
+            <a className="text-gray-400 cursor-pointer text-base hover:text-[#2BD0D0]">
+              Contact
+            </a>
           </div>
         </div>
         <div className="flex space-x-5">
-          <img src="/shortly/images/icon-facebook.svg" alt="" />
-          <img src="/shortly/images/icon-instagram.svg" alt="" />
-          <img src="/shortly/images/icon-pinterest.svg" alt="" />
-          <img src="/shortly/images/icon-twitter.svg" alt="" />
+          <img
+            src="/shortly/images/icon-facebook.svg"
+            alt=""
+            className="cursor-pointer "
+          />
+          <img
+            src="/shortly/images/icon-instagram.svg"
+            alt=""
+            className="cursor-pointer"
+          />
+          <img
+            src="/shortly/images/icon-pinterest.svg"
+            alt=""
+            className="cursor-pointer"
+          />
+          <img
+            src="/shortly/images/icon-twitter.svg"
+            alt=""
+            className="cursor-pointer"
+          />
         </div>
       </footer>
     </div>
