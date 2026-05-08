@@ -21,6 +21,8 @@ export default function page() {
             <SunIcon className="text-white" size={20} />
           </div>
         </div>
+        {/* hero section */}
+        <div></div>
       </div>
     </div>
   );
