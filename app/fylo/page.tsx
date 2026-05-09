@@ -21,8 +21,23 @@ export default function page() {
             <SunIcon className="text-white" size={20} />
           </div>
         </div>
-        {/* hero section */}
-        <div></div>
+        {/* hero */}
+        <div className="flex flex-col max-w-3xl mx-auto p-5 space-y-10">
+          <img src="/fylo/images/illustration-intro.png" alt="" />
+          <div className="text-center font-nunito space-y-7 ">
+            <h1 className="text-white md:text-4xl text-4xl font-semibold ">
+              All your files in one secure location, assessible anywhere.
+            </h1>
+            <p className="mx-auto text-base md:text-lg max-w-xl">
+              Fylo stores all your most important files in one secure location.
+              Access them wherever you need, share and collaborate with friends
+              family, and co-workers.
+            </p>
+            <button className="bg-[#65E2D9] hover:cursor-pointer hover:scale-95 text-white text-lg py-3 px-10 rounded-full">
+              Get Started
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
