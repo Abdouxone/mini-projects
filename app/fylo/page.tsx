@@ -2,7 +2,7 @@ import { SunIcon } from "lucide-react";
 
 export default function page() {
   return (
-    <div>
+    <div className="scroll-smooth">
       <div className="dark:bg-[#1C2431]">
         {/* header */}
         <div className="flex flex-col md:space-y-0 space-y-7 md:flex-row md:justify-between items-center p-10">
