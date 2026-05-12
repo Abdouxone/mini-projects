@@ -113,7 +113,7 @@ export default function page() {
           </div>
 
           {/* productive section and testimonial section*/}
-          <div className="bg-[#1C2431]">
+          <div className="bg-[#1C2431] pb-60">
             <div className="flex flex-col pb-25 p-10 gap-10 items-center md:flex-row max-w-7xl mx-auto mt-20">
               <div className=" ">
                 <img
