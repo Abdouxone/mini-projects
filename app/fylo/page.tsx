@@ -217,6 +217,8 @@ export default function page() {
               </div>
             </div>
           </div>
+          {/* footer */}
+          <div></div>
         </div>
       </div>
     </div>
