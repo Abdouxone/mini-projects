@@ -218,7 +218,9 @@ export default function page() {
             </div>
           </div>
           {/* footer */}
-          <div></div>
+          <div>
+            {/* ss */}
+          </div>
         </div>
       </div>
     </div>
