@@ -5,6 +5,7 @@ import {
   Bai_Jamjuree,
   Poppins,
   Nunito,
+  Rubik,
 } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
@@ -17,6 +18,12 @@ const geistSans = Geist({
 const baiJamjuree = Bai_Jamjuree({
   variable: "--font-bai-jamjuree",
   weight: "400",
+  subsets: ["latin"],
+});
+
+const rubik = Rubik({
+  variable: "--font-rubik",
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
 });
 
@@ -50,10 +57,16 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${baiJamjuree.variable}  ${nunito.variable}  h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${baiJamjuree.variable} ${rubik.variable}  ${nunito.variable}  h-full antialiased`}
+      suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col">
-        <ThemeProvider attribute="class" defaultTheme="dark">
+      <body className="min-h-full flex  flex-col">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          disableTransitionOnChange
+          enableSystem={false}
+        >
           {children}
         </ThemeProvider>
       </body>
