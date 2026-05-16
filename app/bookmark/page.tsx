@@ -62,7 +62,7 @@ export default function page() {
         <div
           className={`${styles.container}    mx-auto  px-5  flex-col-reverse flex lg:flex-row `}
         >
-          <div className="flex flex-col min-[1020px]:mt-20 text-center min-[1020px]:text-left  space-y-8 min-[1440px]:max-w-xl">
+          <div className="flex flex-col min-[1020px]:mt-20 min-[1020px]:mb-20 text-center min-[1020px]:text-left  space-y-8 min-[1440px]:max-w-xl">
             <h1 className="font-rubik min-[1020px]:text-6xl  text-3xl font-semibold">
               A Simple Bookmark Manager
             </h1>
@@ -80,12 +80,12 @@ export default function page() {
               </button>
             </div>
           </div>
-          <div className="flex relative   ">
-            <div className="bg-[#5368DF]  hidden min-[1020px]:block h-[300px] right-0 absolute top-60 rounded-l-full translate-x-50 w-[800px] "></div>
+          <div className="flex relative ">
+            <div className="bg-[#5368DF]  hidden min-[1020px]:block h-[300px] right-0 absolute top-60 rounded-l-full min-[1020px]:translate-x-120 min-[1440px]:translate-x-100 w-[800px] "></div>
             <img
               src="/bookmark/images/illustration-hero.svg"
               alt=""
-              className="relative z-10 min-[1020px]:mb-20 h-auto w-auto min-[1020px]:top-40 min-[1440px]:top-0 min-[1440px]:ml-25 "
+              className="relative z-10 min-[1440px]:mb-20 object-contain h-auto w-auto min-[1020px]:top-0 min-[1440px]:top-0 min-[1440px]:ml-25 "
             />
           </div>
         </div>
@@ -102,7 +102,7 @@ export default function page() {
             can access them on the go.
           </p>
         </div>
-        <div className="flex   mx-auto text-zinc-700 mt-10 font-rubik text-lg flex-col md:flex-row min-[1020px]:space-x-10 text-center min-[1020px]:text-start min-[1020px]:space-y-0 space-y-10">
+        <div className="flex   mx-auto text-zinc-700 mt-10 font-rubik text-lg flex-col md:flex-row md:space-x-10 text-center min-[1020px]:text-start min-[1020px]:space-y-0 space-y-10">
           <h1
             className="cursor-pointer  focus:border-b-2 border-[#FA5757] hover:text-[#FA5757]"
             onClick={() => setFeature(features[0])}
@@ -122,16 +122,16 @@ export default function page() {
             Easy Sharing
           </h1>
         </div>
-        <div className="flex flex-col space-y-10 min-[1020px]:space-y-0 min-[1020px]:flex-row  mt-10  items-center ">
+        <div className="flex flex-col space-y-10 min-[1020px]:space-y-0 md:flex-row  mt-10  items-center ">
           <div className="relative ">
             <div className="bg-[#5368DF] h-[300px] hidden min-[1020px]:block w-[800px] absolute top-35 -left-60 rounded-r-full"></div>
             <img
               src={feature.img}
               alt=""
-              className="w-auto h-auto min-[1020px]:left-30 relative z-10 "
+              className="w-auto h-auto object-contain min-[1020px]:left-30 relative z-10 "
             />
           </div>
-          <div className="flex  top-0 text-center min-[1020px]:text-left relative flex-col min-[1020px]:items-start  items-center font-rubik min-[1020px]:ml-50 max-w-md space-y-8">
+          <div className="flex  top-0  text-center md:text-left relative flex-col md:items-start  items-center font-rubik min-[1020px]:ml-50 max-w-md space-y-8">
             <h1 className="text-3xl font-semibold">{feature.title}</h1>
             <p className="text-base font-normal">{feature.description}</p>
             <button className=" text-base font-medium rounded-lg bg-[#5468DF] text-white py-3 px-8">
