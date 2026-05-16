@@ -8,7 +8,6 @@ import {
   Rubik,
 } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "next-themes";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -60,16 +59,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${baiJamjuree.variable} ${rubik.variable}  ${nunito.variable}  h-full antialiased`}
       suppressHydrationWarning
     >
-      <body className="min-h-full flex  flex-col">
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="light"
-          disableTransitionOnChange
-          enableSystem={false}
-        >
-          {children}
-        </ThemeProvider>
-      </body>
+      <body className="min-h-full flex  flex-col">{children}</body>
     </html>
   );
 }
