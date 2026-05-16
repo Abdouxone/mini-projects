@@ -46,10 +46,10 @@ export default function page() {
             free.
           </p>
           <div className="flex flex-row items-center justify-center min-[1020px]:justify-start font-rubik font-medium space-x-5">
-            <button className="bg-[#5468D7] p-4 text-white text-lg rounded-lg">
+            <button className="bg-[#5468D7] min-[1220px]:p-4 p-3 text-white min-[1220px]:text-lg text-sm rounded-lg">
               Get It On Chrome
             </button>
-            <button className="bg-[#D1D5DB] p-4 text-black text-lg rounded-lg">
+            <button className="bg-[#D1D5DB] min-[1220px]:p-4 p-3 text-black min-[1220px]:text-lg text-sm rounded-lg">
               Get It On Firefox
             </button>
           </div>
@@ -59,7 +59,7 @@ export default function page() {
           <img
             src="/bookmark/images/illustration-hero.svg"
             alt=""
-            className="relative z-10 w-full min-[1020px]:mb-20 h-fit min-[1020px]:top-40 min-[1440px]:top-0 min-[1440px]:ml-25 "
+            className="relative z-10 min-[1020px]:mb-20 h-auto w-auto min-[1020px]:top-40 min-[1440px]:top-0 min-[1440px]:ml-25 "
           />
         </div>
       </div>
