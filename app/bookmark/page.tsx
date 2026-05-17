@@ -361,6 +361,27 @@ export default function page() {
           </div>
         </section>
       </div>
+      {/* Footer */}
+      <div className="w-full bg-[#252B46]">
+        <div
+          className={`${styles.container} mx-auto p-15 flex flex-col md:flex-row items-center md:justify-between`}
+        >
+          <div className="flex font-rubik flex-col md:flex-row md:space-x-8 items-center gap-5">
+            <img
+              src="/bookmark/images/logo-bookmark-footer.svg"
+              className="object-contain"
+              alt=""
+            />
+            <h1 className="uppercase text-lg text-zinc-400">Features</h1>
+            <h1 className="uppercase text-lg text-zinc-400">Download</h1>
+            <h1 className="uppercase text-lg text-zinc-400">FAQ</h1>
+          </div>
+          <div className="flex-row flex space-x-10 mt-8 md:mt-0">
+            <img src="/bookmark/images/icon-facebook.svg" alt="facebook icon" />
+            <img src="/bookmark/images/icon-twitter.svg" alt="facebook icon" />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
