@@ -228,7 +228,7 @@ export default function page() {
       <div
         className={`${styles.container} px-5 mx-auto mb-30 flex flex-col mt-10`}
       >
-        <div className="max-w-2xl mx-auto">
+        <div className=" max-w-2xl mx-auto">
           <div className="group border-b border-zinc-400 py-1" tabIndex={0}>
             <div className="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer group ease">
               <div className="transition duration-500 ease-in group-hover:text-red-500">
@@ -334,6 +334,32 @@ export default function page() {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Newsletter section */}
+      <div className="bg-[#5368DF] w-full">
+        <section
+          className={`${styles.container} max-w-lg py-20 px-5 mx-auto items-center flex justify-center`}
+        >
+          <div className="flex flex-col space-y-8 text-center">
+            <h1 className="text-white text-2xl font-serif">
+              35,000+ Already Joined
+            </h1>
+            <h1 className="text-4xl max-w-lg font-rubik font-semibold text-white">
+              Stay up-to-date with what we're doing
+            </h1>
+            <div className="flex md:flex-row flex-col space-y-5 md:space-y-0 md:space-x-5 justify-center items-center">
+              <input
+                type="email"
+                className="bg-white rounded-xl p-3"
+                placeholder="Enter your email address"
+              />
+              <button className="px-4 py-3 text-white font-rubik rounded-xl  bg-[#E95864]">
+                Contact Us
+              </button>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   );
