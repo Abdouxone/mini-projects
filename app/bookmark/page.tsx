@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import styles from "./page.module.css";
+import { X } from "lucide-react";
 
 const features = [
   {
@@ -24,14 +25,15 @@ const features = [
 ];
 
 export default function page() {
+  const [open, setOpen] = useState(false);
   const [feature, setFeature] = useState(features[0]);
   return (
     <div className=" ">
       {/* header */}
       <div
-        className={`${styles.container} mx-auto flex font-rubik flex-row justify-between px-3 py-10 items-center `}
+        className={`${styles.container} mx-auto relative flex font-rubik flex-row justify-between px-5 py-10 items-center `}
       >
-        <img src="/bookmark/images/logo-bookmark.svg" alt="" />
+        <img src="/bookmark/images/logo-bookmark.svg" className="z-22" alt="" />
         <nav className="space-x-10 items-center hidden md:flex uppercase text-lg text-[#9CA3AF]">
           <a href="" className="hover:text-[#FA5757]">
             Features
@@ -47,16 +49,48 @@ export default function page() {
           </button>
         </nav>
         {/* mobile menu */}
-        <div className="flex md:hidden">
+        <div
+          className="flex md:hidden"
+          onClick={() => {
+            setOpen(!open);
+          }}
+        >
           <button>
             <img
-              className="w-5"
+              className="w-5 cursor-pointer"
               src="/bookmark/images/icon-hamburger.svg"
               alt=""
             />
           </button>
         </div>
+        {open && (
+          <div>
+            <div className="font-serif  w-full text-white h-full fixed  z-20 bg-[#3A4058]/95 inset-0 flex flex-col md:hidden divide-y items-center pt-24 tracking-widest divide-gray-500  space-y-5">
+              <div
+                className="right-8 top-10 cursor-pointer absolute"
+                onClick={() => {
+                  setOpen(!open);
+                }}
+              >
+                <X size={30} />
+              </div>
+              <h1 className="uppercase cursor-pointer text-lg max-w-xl w-full text-center  pb-2  ">
+                features
+              </h1>
+              <h1 className="uppercase cursor-pointer text-lg max-w-xl w-full text-center  pb-2">
+                download
+              </h1>
+              <h1 className="uppercase cursor-pointer text-lg max-w-xl w-full text-center  pb-2">
+                FAQ
+              </h1>
+              <button className="uppercase cursor-pointer text-lg">
+                login
+              </button>
+            </div>
+          </div>
+        )}
       </div>
+
       {/* hero */}
       <div className="overflow-x-hidden relative">
         <div
