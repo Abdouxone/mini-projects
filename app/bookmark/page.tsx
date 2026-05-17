@@ -102,28 +102,28 @@ export default function page() {
             can access them on the go.
           </p>
         </div>
-        <div className="flex   mx-auto text-zinc-700 mt-10 font-rubik text-lg flex-col md:flex-row md:space-x-10 text-center min-[1020px]:text-start min-[1020px]:space-y-0 space-y-10">
+        <div className="flex   mx-auto text-zinc-700 mt-10 font-rubik text-lg flex-col md:flex-row md:space-x-10 text-center min-[1020px]:text-start md:space-y-0 space-y-10">
           <h1
-            className="cursor-pointer  focus:border-b-2 border-[#FA5757] hover:text-[#FA5757]"
+            className="cursor-pointer border-b-3 pb-2 focus:border-b-2 border-[#FA5757] hover:text-[#FA5757]"
             onClick={() => setFeature(features[0])}
           >
             Simple Bookmarking
           </h1>
           <h1
-            className="cursor-pointer   hover:text-[#FA5757]"
+            className="cursor-pointer border-b-3 pb-2 border-[#FA5757] hover:text-[#FA5757]"
             onClick={() => setFeature(features[1])}
           >
             Speedy Searching
           </h1>
           <h1
-            className="cursor-pointer   hover:text-[#FA5757]"
+            className="cursor-pointer  border-b-3 pb-2 border-[#FA5757] hover:text-[#FA5757]"
             onClick={() => setFeature(features[2])}
           >
             Easy Sharing
           </h1>
         </div>
-        <div className="flex flex-col space-y-10 min-[1020px]:space-y-0 md:flex-row  mt-10  items-center ">
-          <div className="relative ">
+        <div className="flex flex-col w-full space-y-10 min-[1020px]:space-y-0 md:flex-row items-center md:items-start mt-10 gap-10 ">
+          <div className="relative md:w-1/2">
             <div className="bg-[#5368DF] h-[300px] hidden min-[1020px]:block w-[800px] absolute top-35 -left-60 rounded-r-full"></div>
             <img
               src={feature.img}
@@ -131,7 +131,7 @@ export default function page() {
               className="w-auto h-auto object-contain min-[1020px]:left-30 relative z-10 "
             />
           </div>
-          <div className="flex  top-0  text-center md:text-left relative flex-col md:items-start  items-center font-rubik min-[1020px]:ml-50 max-w-md space-y-8">
+          <div className="flex  top-0 md:w-1/2 text-center md:text-left relative flex-col md:items-start  items-center font-rubik  max-w-md space-y-8">
             <h1 className="text-3xl font-semibold">{feature.title}</h1>
             <p className="text-base font-normal">{feature.description}</p>
             <button className=" text-base font-medium rounded-lg bg-[#5468DF] text-white py-3 px-8">
