@@ -142,7 +142,7 @@ export default function page() {
       </div>
 
       {/* extension */}
-      <div className="mt-50 flex flex-col space-y-10 items-center justify-center">
+      <div className="mt-50 flex flex-col  space-y-10 items-center justify-center">
         <div className="flex flex-col text-center max-w-md md:max-w-lg space-y-4 font-rubik">
           <h1 className="text-black text-3xl md:text-4xl font-medium ">
             Download the extension
@@ -152,7 +152,7 @@ export default function page() {
             you've got a favourite you'd like us to prioritize.
           </p>
         </div>
-        <div className="flex flex-col space-y-10 md:space-y-0 gap-5 overflow-x-hidden  w-full md:items-center md:justify-center px-10 md:flex-row">
+        <div className="flex flex-col pb-10 space-y-10 md:space-y-0 gap-5 overflow-x-hidden  w-full md:items-center md:justify-center px-10 md:flex-row">
           <div className="flex flex-col font-rubik shadow-xl rounded-lg gap-5 items-center">
             <img
               src="/bookmark/images/logo-chrome.svg"
@@ -191,7 +191,7 @@ export default function page() {
               </button>
             </div>
           </div>
-          <div className="flex flex-col font-rubik shadow-xl md:mt-14 rounded-lg gap-5 items-center">
+          <div className="flex flex-col  font-rubik shadow-xl md:mt-14 rounded-lg gap-5 items-center">
             <img
               src="/bookmark/images/logo-opera.svg"
               className="w-auto h-auto mt-5"
@@ -208,6 +208,129 @@ export default function page() {
               <button className="bg-[#5468DF] cursor-pointer hover:bg-white hover:text-[#5468DF] border-2 transition-all duration-250 border-[#5468DF] whitespace-nowrap w-full text-white p-3 mb-4 rounded-lg">
                 Add & Install Extension
               </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* FAQ HEADING */}
+      <section
+        className={`${styles.container} font-rubik mx-auto mt-30 flex flex-col justify-center items-center space-y-5  text-center`}
+      >
+        <h1 className="md:text-4xl text-3xl font-semibold text-center">
+          Frequently Asked Questions
+        </h1>
+        <p className="max-w-md text-center text-base font-normal text-zinc-800">
+          Here are some of our FAQs. If you have any other questions you'd like
+          answered please feel free to email us.
+        </p>
+      </section>
+      {/* FAQ ACCORDION */}
+      <div
+        className={`${styles.container} px-5 mx-auto mb-30 flex flex-col mt-10`}
+      >
+        <div className="max-w-2xl mx-auto">
+          <div className="group border-b border-zinc-400 py-1" tabIndex={0}>
+            <div className="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer group ease">
+              <div className="transition duration-500 ease-in group-hover:text-red-500">
+                What is Bookmark?
+              </div>
+
+              <div className="transition duration-500 ease-in group-focus:-rotate-180 group-focus:text-red-500">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="3"
+                    d="M1 1l8 8 8-8"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div className="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease-in">
+              <p className="py-2 text-justify text-base font-normal text-gray-400">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+                repellat amet doloribus consequuntur eos similique provident
+                tempora voluptates iure quia fuga dicta voluptatibus culpa
+                mollitia recusandae delectus id suscipit labore?
+              </p>
+            </div>
+          </div>
+          <div className="group border-b border-zinc-400  py-1" tabIndex={1}>
+            <div className="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer group ease">
+              <div className="transition duration-500 ease-in group-hover:text-red-500">
+                How can I request a new browser?
+              </div>
+
+              <div className="transition duration-500 ease-in group-focus:-rotate-180 group-focus:text-red-500">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="3"
+                    d="M1 1l8 8 8-8"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div className="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease-in">
+              <p className="py-2 text-justify text-base font-normal text-gray-400">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+                repellat amet doloribus consequuntur eos similique provident
+                tempora voluptates iure quia fuga dicta voluptatibus culpa
+                mollitia recusandae delectus id suscipit labore?
+              </p>
+            </div>
+          </div>
+          <div className="group border-b border-zinc-400  py-1" tabIndex={2}>
+            <div className="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer group ease">
+              <div className="transition duration-500 ease-in group-hover:text-red-500">
+                Is ther a mobile app?
+              </div>
+
+              <div className="transition duration-500 ease-in group-focus:-rotate-180 group-focus:text-red-500">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="3"
+                    d="M1 1l8 8 8-8"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div className="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease-in">
+              <p className="py-2 text-justify text-base font-normal text-gray-400">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+                repellat amet doloribus consequuntur eos similique provident
+                tempora voluptates iure quia fuga dicta voluptatibus culpa
+                mollitia recusandae delectus id suscipit labore?
+              </p>
+            </div>
+          </div>
+          <div className="group border-b border-zinc-400  py-1" tabIndex={3}>
+            <div className="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer group ease">
+              <div className="transition duration-500 ease-in group-hover:text-red-500">
+                What about other Chromium browsers
+              </div>
+
+              <div className="transition duration-500 ease-in group-focus:-rotate-180 group-focus:text-red-500">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="3"
+                    d="M1 1l8 8 8-8"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div className="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease-in">
+              <p className="py-2 text-justify text-base font-normal text-gray-400">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+                repellat amet doloribus consequuntur eos similique provident
+                tempora voluptates iure quia fuga dicta voluptatibus culpa
+                mollitia recusandae delectus id suscipit labore?
+              </p>
             </div>
           </div>
         </div>
