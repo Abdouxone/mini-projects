@@ -124,11 +124,11 @@ export default function page() {
         </div>
         <div className="flex flex-col w-full space-y-10 min-[1020px]:space-y-0 md:flex-row items-center md:items-start mt-10 gap-10 ">
           <div className="relative md:w-1/2">
-            <div className="bg-[#5368DF] h-[300px] hidden min-[1020px]:block w-[800px] absolute top-35 -left-60 rounded-r-full"></div>
+            <div className="bg-[#5368DF] h-[300px] hidden min-[1020px]:block w-[800px] absolute top-35 md:-left-90 min-[1020px]:-left-60 rounded-r-full"></div>
             <img
               src={feature.img}
               alt=""
-              className="w-auto h-auto object-contain min-[1020px]:left-30 relative z-10 "
+              className="w-auto h-auto object-contain md:left-3 min-[1020px]:left-30 relative z-10 "
             />
           </div>
           <div className="flex  top-0 md:w-1/2 text-center md:text-left relative flex-col md:items-start  items-center font-rubik  max-w-md space-y-8">
@@ -137,6 +137,78 @@ export default function page() {
             <button className=" text-base font-medium rounded-lg bg-[#5468DF] text-white py-3 px-8">
               More Info
             </button>
+          </div>
+        </div>
+      </div>
+
+      {/* extension */}
+      <div className="mt-50 flex flex-col space-y-10 items-center justify-center">
+        <div className="flex flex-col text-center max-w-md md:max-w-lg space-y-4 font-rubik">
+          <h1 className="text-black text-3xl md:text-4xl font-medium ">
+            Download the extension
+          </h1>
+          <p className="text-base font-normal">
+            We've got more browsers in the pipeline. Please do let us know if
+            you've got a favourite you'd like us to prioritize.
+          </p>
+        </div>
+        <div className="flex flex-col space-y-10 md:space-y-0 gap-5 overflow-x-hidden  w-full md:items-center md:justify-center px-10 md:flex-row">
+          <div className="flex flex-col font-rubik shadow-xl rounded-lg gap-5 items-center">
+            <img
+              src="/bookmark/images/logo-chrome.svg"
+              className="w-auto h-auto mt-5"
+              alt="chrome logo"
+            />
+            <h1 className="text-xl font-bold ">Add to Chrome</h1>
+            <p className="text-base font-normal">Minimum version 62</p>
+            <img
+              src="/bookmark/images/bg-dots.svg"
+              alt="dots"
+              className="w-full"
+            />
+            <div className="w-full px-8">
+              <button className="bg-[#5468DF] cursor-pointer hover:bg-white hover:text-[#5468DF] border-2 transition-all duration-250 border-[#5468DF] w-full whitespace-nowrap text-white p-3 mb-4 rounded-lg">
+                Add & Install Extension
+              </button>
+            </div>
+          </div>
+          <div className="flex flex-col font-rubik shadow-xl md:mt-7 rounded-lg gap-5 items-center">
+            <img
+              src="/bookmark/images/logo-firefox.svg"
+              className="w-auto h-auto mt-5"
+              alt="chrome logo"
+            />
+            <h1 className="text-xl font-bold ">Add to Firefox</h1>
+            <p className="text-base font-normal">Minimum version 55</p>
+            <img
+              src="/bookmark/images/bg-dots.svg"
+              alt="dots"
+              className="w-full"
+            />
+            <div className="w-full px-8">
+              <button className="bg-[#5468DF] cursor-pointer hover:bg-white hover:text-[#5468DF] border-2 transition-all duration-250 border-[#5468DF] whitespace-nowrap w-full text-white p-3 mb-4 rounded-lg">
+                Add & Install Extension
+              </button>
+            </div>
+          </div>
+          <div className="flex flex-col font-rubik shadow-xl md:mt-14 rounded-lg gap-5 items-center">
+            <img
+              src="/bookmark/images/logo-opera.svg"
+              className="w-auto h-auto mt-5"
+              alt="chrome logo"
+            />
+            <h1 className="text-xl font-bold ">Add to Opera</h1>
+            <p className="text-base font-normal">Minimum version 46</p>
+            <img
+              src="/bookmark/images/bg-dots.svg"
+              alt="dots"
+              className="w-full"
+            />
+            <div className="w-full px-8">
+              <button className="bg-[#5468DF] cursor-pointer hover:bg-white hover:text-[#5468DF] border-2 transition-all duration-250 border-[#5468DF] whitespace-nowrap w-full text-white p-3 mb-4 rounded-lg">
+                Add & Install Extension
+              </button>
+            </div>
           </div>
         </div>
       </div>
