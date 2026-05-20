@@ -37,7 +37,7 @@ export default function page() {
       <div
         className={`max-w-2xl ${styles.container} px-5 md:px-0 mx-auto relative z-5 space-y-10 mt-10 md:mt-20 flex flex-col items-center justify-center`}
       >
-        <div className="md:text-4xl font-bold text-3xl flex flex-col md:flex-row text-center font-rubik text-white">
+        <div className="md:text-4xl font-bold text-3xl md:gap-2  flex flex-col md:flex-row text-center font-rubik text-white">
           <span>We Are</span>
           <span>Coming Soon...</span>
         </div>
