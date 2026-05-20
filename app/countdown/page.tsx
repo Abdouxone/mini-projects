@@ -40,9 +40,9 @@ export default function page() {
         <h1 className="md:text-4xl text-2xl text-center font-rubik text-white">
           We Are Coming Soon...
         </h1>
-        <p className="text-center font-rubik font-normal md:text-xl text-lg max-w-2xl text-zinc-200">
-          Start working with Techwind that can provide everything you need to
-          generate awareness, drive traffic, connect.
+        <p className="text-center font-rubik font-normal md:text-xl text-sm max-w-2xl text-zinc-200">
+          You can't lift the stone without being ready for the snake that's
+          revealed.
         </p>
 
         <div className="grid font-poppins   text-white md:grid-cols-4 gap-5 grid-cols-2 mt-5">
