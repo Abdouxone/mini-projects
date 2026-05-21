@@ -62,6 +62,7 @@ export default function page() {
           <div className="p-7 w-25 h-25 flex-col flex items-center justify-center backdrop-blur-xs backdrop-saturate-150 border border-white/20 shadow-[0_8px_32px_rgba(0,0,0,0.37)] rounded-full">
             <h1 className="text-2xl">{seconds}</h1>
             <span>seconds</span>
+            <span></span>
           </div>
         </div>
       </div>
