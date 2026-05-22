@@ -63,6 +63,7 @@ export default function page() {
             <h1 className="text-2xl">{seconds}</h1>
             <span>seconds</span>
             <span></span>
+            <span></span>
           </div>
         </div>
       </div>
