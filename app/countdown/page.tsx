@@ -65,6 +65,9 @@ export default function page() {
             <span></span>
             <span></span>
             <span></span>
+            <span></span>
+            <span></span>
+
           </div>
         </div>
       </div>
