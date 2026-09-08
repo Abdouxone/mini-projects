@@ -233,6 +233,7 @@ export default function page() {
                 className="hover:fill-strong-cyan"
                 alt=""
               />
+              
               <img src="/clipboard/images/icon-twitter.svg" alt="" />
               <img src="/clipboard/images/icon-instagram.svg" alt="" />
             </div>
