@@ -1,13 +1,13 @@
 export default function Cookie() {
   return (
     <div className="fixed bottom-4 flex  justify-center w-full">
-      <div className=" bg-gray-200/70 max-w-md p-5 rounded-xl w-full space-x-5 flex">
+      <div className=" bg-white shadow-2xl max-w-md p-5 items-center sm:items-start gap-3 rounded-xl w-full sm:flex-row flex-col flex">
         <img
           src="/cookies/images/cookie/img-1.png"
           alt="cookie"
-          className="h-10"
+          className="h-10 w-10 "
         />
-        <div className="flex font-nunito flex-col space-y-3">
+        <div className="flex font-nunito flex-col  space-y-3">
           <h2 className="text-2xl font-semibold">Cookie Consent</h2>
           <p className="text-zinc-700 text-base font-normal">
             This website uses cookies or similar technologies, to enhance your
@@ -17,11 +17,11 @@ export default function Cookie() {
               Privacy Policy
             </a>
           </p>
-          <div className="flex justify-between ">
-            <button className="bg-blue-500 cursor-pointer hover:bg-blue-700 transition-all duration-500  px-14 py-2 rounded-full text-white">
+          <div className="sm:flex-row flex flex-col justify-between gap-3   ">
+            <button className="bg-blue-500 shadow-xl py-2 cursor-pointer hover:bg-blue-700 transition-all duration-500  w-full rounded-full text-white">
               Accept
             </button>
-            <button className="border text-blue-500 cursor-pointer hover:bg-blue-700 hover:text-white transition-all duration-500 border-blue-500 rounded-full px-14 py-2">
+            <button className="border text-blue-500 shadow-xl py-2 cursor-pointer hover:bg-blue-700 hover:text-white transition-all duration-500 w-full border-blue-500 rounded-full ">
               Decline
             </button>
           </div>
